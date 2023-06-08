@@ -52,7 +52,7 @@ python get_sents.py
 
 ### Claim Validation
 
-執行`\CHEF\predict model_training`資料夾中的`train.py`來訓練模型。
+執行`\CHEF\Claim_validation`資料夾中的`train.py`來訓練模型。
 ```
 python train.py
 ```
