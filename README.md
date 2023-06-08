@@ -1,18 +1,17 @@
 # Team3068_FactualTextRetrieval
-T-Brain Team3068 Factual Text Retrieval
-README.md檔案交代安裝配置環境，重要模塊輸出/輸入，以讓第三方用戶可以除錯、重新訓練與重現結果。 
 
 ### 請[點此](https://drive.google.com/drive/folders/1FNjZ5L3uTMsezUJE-jt15rAkCIfv0_40?usp=share_link)下載所需的Model和資料
 
 - 將Wiki Folder放入執行資料夾。
 - 將ir.db和ir_title.db放入`Document_retrieval`資料夾
-- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607和hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入...
+- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入...
+- hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入...
 
 
 ## Requirements 
 
 作業系統：Windows  
-GPU：NVIDIA GeForce RTX 3090 24G
+GPU：NVIDIA GeForce RTX 3090 24G  
 語言：Python 3.10.6  
 主要函式庫：  
 - Jieba  
