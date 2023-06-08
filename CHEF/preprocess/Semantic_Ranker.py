@@ -27,12 +27,13 @@ device = torch.device("cuda")
 max_length = 256
 
 def main():
-    modelPath = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\pretrained_vic\\hfl_pretraineds_0511sentBase_docArt_epoch50_0519"
-    semanticTrain1Path = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\SemanticRankerData_eva\\claim_train_BM25F_v3.json"
-    semanticTrain2Path = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\SemanticRankerData_eva\\claim_train2_BM25F_v3.json"
-    semanticTest1Path = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\SemanticRankerData_eva\\claim_test_BM25F_v3.json"
-    semanticTest2Path = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\SemanticRankerData_eva\\claim_private_test_BM25F_v3.json"
-    semanticResultPath = "C:\\Users\\Howard\\Desktop\\Reva\\競賽\\vic\\sbert\\SemanticResult\\semanticRes_0511SBDA50e0519_BM25Fv3All_0530.jsonl"
+    # modelPath : 放入要使用的bert model
+    modelPath = ".\sbert\model\hfl_pretraineds_0511sentBase_docArt_epoch50_0519"
+    semanticTrainPath = "..\document retrieval_data\claim_train_BM25F_v3.json"
+    semanticTest1Path = "..\document retrieval_data\claim_test_BM25F_v3.json"
+    semanticTest2Path = "..\document retrieval_data\claim_private_test_BM25F_v3.json"
+    # semanticResultPath : semantic result 的儲存位置
+    semanticResultPath = ".\preprocessed_result\semanticRes_0511SBDA50e0519_BM25Fv3ALL_0530.jsonl"
     
     tokenizer = AutoTokenizer.from_pretrained(modelPath)
     model = AutoModel.from_pretrained(modelPath)
