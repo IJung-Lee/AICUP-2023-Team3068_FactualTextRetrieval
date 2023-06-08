@@ -7,6 +7,10 @@
 - 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入執行資料夾
 - 將pretrained的hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入執行資料夾
 
+| 模型 | Google下載 |
+| --- | --- |
+| `hfl_pretraineds_0511sentBase_document_article_epoch50_0519` | [連結](https://drive.google.com/drive/folders/1CbU0po4OXgTDoKnka3-5cmW95RqKXYMd?usp=share_link) |
+| `hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607` | [連結](https://drive.google.com/drive/folders/1rnGel3ZZJ19icdBfYIXcIa9Mza7bt_oB?usp=share_link) |
 
 ## Requirements 
 
@@ -34,6 +38,14 @@ python Inverted_Index.py
 
 
 ### Sentence Retrieval
+執行`Sentence_retrieval`資料夾中的`Semantic_Ranker.py`來計算和claim相似度最高的五句句子。
+```
+python Semantic_Ranker.py
+```
+再執行`Sentence_retrieval`資料夾中的`get_sents.py`生成對應格式。
+```
+python get_sents.py
+```
 
 ### Claim Validation
 
