@@ -7,7 +7,8 @@ def main():
 
 
 def chef_test_train():
-    data = json.load(open('..\..\document retrieval_data\claim_train_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_train2_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_test_BM25F_V3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_private_test_BM25F_v3.json', 'r', encoding='utf-8'))
+    
+    data = json.load(open('..\..\Document_retrieval\Result\claim_train_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_train2_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_test_BM25F_V3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_private_test_BM25F_v3.json', 'r', encoding='utf-8'))
     cossim_sents_lines = open('..\Sentence_retrieval_result\semanticRes_0511SBDA50e0519_BM25Fv3ALL_0530.jsonl', 'r', encoding='utf-8').readlines()[-len(data):]
     for index in range(len(data)):
         row = data[index]
@@ -22,7 +23,7 @@ def chef_test_train():
     
 
 def claim_cossim():
-    data = json.load(open('..\..\document retrieval_data\claim_train_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_train2_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_test_BM25F_V3.json', 'r', encoding='utf-8')) + json.load(open('..\document retrieval_data\claim_private_test_BM25F_v3.json', 'r', encoding='utf-8'))
+    data = json.load(open('..\..\Document_retrieval\Result\claim_train_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_train2_BM25F_v3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_test_BM25F_V3.json', 'r', encoding='utf-8')) + json.load(open('..\..\Document_retrieval\Result\claim_private_test_BM25F_v3.json', 'r', encoding='utf-8'))
     cossim_sents_lines = open('..\Sentence_retrieval_result\semanticRes_0511SBDA50e0519_BM25Fv3ALL_0530.jsonl', 'r', encoding='utf-8').readlines()[-len(data):].readlines()[-len(data):]
     sent_list = []
     for index in range(len(data)):
