@@ -6,14 +6,13 @@ README.md檔案交代安裝配置環境，重要模塊輸出/輸入，以讓第�
 
 - 將Wiki Folder放入執行資料夾。
 - 將ir.db和ir_title.db放入`Document_retrieval`資料夾
-- 將pretrained的`hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607`和`hfl_pretraineds_0511sentBase_document_article_epoch50_0519`放入...
+- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607和hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入...
 
 
 ## Requirements 
 
 作業系統：Windows  
-CPU：12th GEN Intel(R) Core(TM) i9-12900K  
-GPU：NVIDIA GeForce RTX 3090 24G  
+GPU：NVIDIA GeForce RTX 3090 24G
 語言：Python 3.10.6  
 主要函式庫：  
 - Jieba  
@@ -32,7 +31,7 @@ GPU：NVIDIA GeForce RTX 3090 24G
 python Inverted_Index.py
 ```
 
-執行doc_retrieval.ipynb，產生BM25F計算結果，結果將生成在Document_retrieval中。  
+執行`doc_retrieval.ipynb`，產生BM25F計算結果，結果將生成在Document_retrieval中。  
 
 
 ### Sentence Retrieval
