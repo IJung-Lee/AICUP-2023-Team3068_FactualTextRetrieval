@@ -59,7 +59,7 @@ def write_postings_to_db(postings_lists, db_path):
 if __name__ == "__main__":
     # 創建DB
     '''Create Title DB'''
-    wiki = pd.read_csv('./Wiki/wiki_clean_doc.csv', keep_default_na=False, na_values=[' '], encoding='utf-8')
+    wiki = pd.read_csv('../Wiki/wiki_clean_doc.csv', keep_default_na=False, na_values=[' '], encoding='utf-8')
     title_lists = {}
     for i in tqdm(range(len(wiki))):
         words = re.split(r"_\(", wiki['Article'][i])
@@ -74,14 +74,14 @@ if __name__ == "__main__":
         else:
             title_lists[title] = [1, [docid]] # [df, [Doc]]
 
-    write_postings_to_db(title_lists, './Document_retrieval/ir_title.db')
+    write_postings_to_db(title_lists, './Result/ir_title.db')
 
 
     '''Create Document DB'''
-    jieba.load_userdict('./Document_retrieval/userdict.txt')
+    jieba.load_userdict('./userdict.txt')
     stop_pseg = set()
     postings_lists = {}
-    f = open('./Document_retrieval/stopwords.txt', encoding = 'utf-8')
+    f = open('./stopwords.txt', encoding = 'utf-8')
     words = f.read()
     stop_words = set(words.split('\n'))
 
@@ -103,4 +103,4 @@ if __name__ == "__main__":
                 postings_lists[key][1].append(d)
             else:
                 postings_lists[key] = [1, [d]] # [df, [Doc]]
-    write_postings_to_db(postings_lists, './Document_retrieval/ir.db')
+    write_postings_to_db(postings_lists, './Result/ir.db')

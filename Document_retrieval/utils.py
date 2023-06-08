@@ -40,6 +40,8 @@ def wiki_num_sentence(folder_path):
     '''句子'''
     wikiALL = dict()
     for data in files:
+        if data == '/.DS_Store':
+            continue
         df = pd.read_json(path_or_buf=folder_path+'/'+data, lines=True)
         df.set_index('id' , inplace=True)
         df = df.fillna(0)
@@ -53,6 +55,7 @@ def wiki_num_sentence(folder_path):
                     except:pass
     wiki_df = pd.DataFrame(list(wikiALL.keys()), columns=['Article', 'Num'])
     wiki_df['Text'] = list(wikiALL.values())
+    wiki_df.to_csv('../Wiki/wiki_clean.csv', index=False )
     return wiki_df
 
 def wiki_doc(folder_path):
@@ -79,7 +82,7 @@ def wiki_doc(folder_path):
             wikiALL[i] = text
     wiki_doc = pd.DataFrame(list(wikiALL.keys()), columns=['Article'])
     wiki_doc['Text'] = list(wikiALL.values())
-    wiki_doc.to_csv('./Wiki/wiki_clean_doc.csv', index=False )
+    wiki_doc.to_csv('../Wiki/wiki_clean_doc.csv', index=False )
     return wiki_doc
 
 
@@ -106,7 +109,7 @@ def wiki_arctext_doc(folder_path):
             wikiALL[i] = text
     wiki_doc = pd.DataFrame(list(wikiALL.keys()), columns=['Article'])
     wiki_doc['Text'] = list(wikiALL.values())
-    wiki_doc.to_csv('./Wiki/wiki_clean_arctext_doc.csv', index=False )
+    wiki_doc.to_csv('../Wiki/wiki_clean_arctext_doc.csv', index=False )
     return wiki_doc
 
 
@@ -133,7 +136,7 @@ def wiki_numtext_doc(folder_path):
             wikiALL[i] = text
     wiki_doc = pd.DataFrame(list(wikiALL.keys()), columns=['Article'])
     wiki_doc['Text'] = list(wikiALL.values())
-    wiki_doc.to_csv('./Wiki/wiki_clean_numtext_doc.csv', index=False)
+    wiki_doc.to_csv('../Wiki/wiki_clean_numtext_doc.csv', index=False)
     return wiki_doc
 
 
@@ -164,9 +167,9 @@ def new_userdict(wiki_doc_path, save_path):
 
 
 def claim_evidence():
-    claim1 = pd.read_json(path_or_buf='./訓練資料集/public_train_0316.jsonl', lines=True)
-    claim2 = pd.read_json(path_or_buf='./訓練資料集/public_train_0522.jsonl', lines=True)
-    wiki = pd.read_csv('./Wiki/wiki_clean.csv', keep_default_na=False, na_values=[' '])
+    claim1 = pd.read_json(path_or_buf='./Data/public_train_0316.jsonl', lines=True)
+    claim2 = pd.read_json(path_or_buf='./Data/public_train_0522.jsonl', lines=True)
+    wiki = pd.read_csv('../Wiki/wiki_clean.csv', keep_default_na=False, na_values=[' '])
     func = lambda x:[y for l in x for y in func(l)] if type(x[0]) == list else [x]
 
     text = []
