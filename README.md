@@ -1,17 +1,21 @@
 # Team3068_FactualTextRetrieval
 
-### 請[點此](https://drive.google.com/drive/folders/1FNjZ5L3uTMsezUJE-jt15rAkCIfv0_40?usp=share_link)下載所需的Model和資料
-
-- 將Wiki Folder放入執行資料夾
-- 將ir.db和ir_title.db放入`Document_retrieval`資料夾
-- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入執行資料夾
-- 將pretrained的hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入執行資料夾
+## 模型、資料下載
 
 | 模型 | Google下載 |
 | --- | --- |
 | `hfl_pretraineds_0511sentBase_document_article_epoch50_0519` | [連結](https://drive.google.com/drive/folders/1CbU0po4OXgTDoKnka3-5cmW95RqKXYMd?usp=share_link) |
 | `hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607` | [連結](https://drive.google.com/drive/folders/1rnGel3ZZJ19icdBfYIXcIa9Mza7bt_oB?usp=share_link) |
 
+| 資料| Google下載 |
+| --- | --- |
+| `Wiki` | [連結]( https://drive.google.com/drive/folders/1_BIDpD_AL2G-rUi9Z_KJ7vciI5eOY5qB?usp=share_link) |
+
+
+- 將Wiki Folder放入執行資料夾
+- 將ir.db和ir_title.db放入`Document_retrieval`資料夾
+- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入執行資料夾
+- 將pretrained的hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入執行資料夾
 ## Requirements 
 
 作業系統：Windows  
