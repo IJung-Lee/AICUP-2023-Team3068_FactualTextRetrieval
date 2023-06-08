@@ -7,6 +7,8 @@
 | `hfl_pretraineds_sentBase_document_article` | [連結](https://drive.google.com/drive/folders/1CbU0po4OXgTDoKnka3-5cmW95RqKXYMd?usp=share_link) |
 | `hfl_SBDA50e_BM25Fv3All` | [連結](https://drive.google.com/drive/folders/1rnGel3ZZJ19icdBfYIXcIa9Mza7bt_oB?usp=share_link) |
 | `Wiki` | [連結]( https://drive.google.com/drive/folders/1_BIDpD_AL2G-rUi9Z_KJ7vciI5eOY5qB?usp=share_link) |
+| `ir_title.db` | [連結]( https://drive.google.com/file/d/1Q04mXYrAGAAB1KAceGkcT1aUmsfUBdMo/view?usp=share_link) |
+| `ir.db` | [連結]( https://drive.google.com/file/d/1KamMYUomOvfygmwz4lWHYQU6UXjSeH38/view?usp=share_link) |
 
 
 - 將Wiki Folder放入執行資料夾
@@ -36,7 +38,7 @@ GPU：NVIDIA GeForce RTX 3090 24G
 python Inverted_Index.py
 ```
 
-執行`doc_retrieval.ipynb`，產生BM25F計算結果，結果將生成在Document_retrieval中。  
+執行`Document_retrieval`資料夾中的`doc_retrieval.ipynb`，產生BM25F計算結果，結果將生成在Document_retrieval的Result中。  
 
 
 ### Sentence Retrieval
