@@ -34,7 +34,7 @@ def main():
     semanticTest1Path = "..\document retrieval_data\claim_test_BM25F_v3.json"
     semanticTest2Path = "..\document retrieval_data\claim_private_test_BM25F_v3.json"
     # semanticResultPath : semantic result 的儲存位置
-    semanticResultPath = ".\preprocessed_result\semanticRes_0511SBDA50e0519_BM25Fv3ALL_0530.jsonl"
+    semanticResultPath = ".\Sentence_retrieval_result\semanticRes_0511SBDA50e0519_BM25Fv3ALL_0530.jsonl"
     
     tokenizer = AutoTokenizer.from_pretrained(modelPath)
     model = AutoModel.from_pretrained(modelPath)

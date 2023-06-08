@@ -136,8 +136,8 @@ def prepareToTrain(sentence, sentence_label, bert_type, model_save_dir):
 
 
 def main(argv = None):
-    oursWikiTrainPath = ".\preprocessed_result\CHEF_wiki_train_0511SBDA50e0519_BM25Fv3ALL_0607.json"
-    oursWikiClaimCossimPath = ".\preprocessed_result\CHEF_wiki_claim_cossim_0511SBDA50e0519_BM25Fv3ALL_0607.json"
+    oursWikiTrainPath = ".\Sentence_retrieval_result\CHEF_wiki_train_0511SBDA50e0519_BM25Fv3ALL_0607.json"
+    oursWikiClaimCossimPath = ".\Sentence_retrieval_result\CHEF_wiki_claim_cossim_0511SBDA50e0519_BM25Fv3ALL_0607.json"
     datalist = json.load(open(oursWikiTrainPath, 'r', encoding='utf-8')) 
     labels = [row['label'] for row in datalist]
     
