@@ -29,7 +29,8 @@ max_length = 256
 def main():
     # modelPath : 放入要使用的bert model
     modelPath = ".\sbert\model\hfl_pretraineds_0511sentBase_docArt_epoch50_0519"
-    semanticTrainPath = "..\document retrieval_data\claim_train_BM25F_v3.json"
+    semanticTrain1Path = "..\document retrieval_data\claim_train_BM25F_v3.json"
+    semanticTrain2Path = "..\document retrieval_data\claim_train_BM25F_v3.json"
     semanticTest1Path = "..\document retrieval_data\claim_test_BM25F_v3.json"
     semanticTest2Path = "..\document retrieval_data\claim_private_test_BM25F_v3.json"
     # semanticResultPath : semantic result 的儲存位置
