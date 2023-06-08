@@ -161,7 +161,7 @@ def getDataSet(sentence, sentence_label):
 def train_and_save_model(model, train_dataloader, val_dataloader, bert_type='bert-base-chinese', model_save_dir='model_save'):
     
     # predictionResultPath : 放入儲存預測結果的路徑
-    predictionResultPath = "..\predict_label\predict_result\all_prediction_0511SBDA50e0519_epoch16_BM25Fv3All_r_0607.pickle"
+    predictionResultPath = ".\predict_result\all_prediction_0511SBDA50e0519_epoch16_BM25Fv3All_r_0607.pickle"
     criterion = nn.CrossEntropyLoss()
 
     optimizer = AdamW(

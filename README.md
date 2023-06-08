@@ -3,7 +3,7 @@
 ## 模型、資料下載
 
 | 模型、資料 | Google下載 |
-| :---: | :---: |
+| --- | :---: |
 | `hfl_pretraineds_sentBase_document_article` | [連結](https://drive.google.com/drive/folders/1CbU0po4OXgTDoKnka3-5cmW95RqKXYMd?usp=share_link) |
 | `hfl_SBDA50e_BM25Fv3All` | [連結](https://drive.google.com/drive/folders/1rnGel3ZZJ19icdBfYIXcIa9Mza7bt_oB?usp=share_link) |
 | `Wiki` | [連結]( https://drive.google.com/drive/folders/1_BIDpD_AL2G-rUi9Z_KJ7vciI5eOY5qB?usp=share_link) |
