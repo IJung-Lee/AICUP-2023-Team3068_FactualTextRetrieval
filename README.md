@@ -11,7 +11,7 @@
 
 - 將Wiki Folder放入執行資料夾
 - 將ir.db和ir_title.db放入`Document_retrieval`資料夾
-- 將fine-tuned的hfl_pretraineds_sentBase_document_article放入`\sbert\fine-tuned\fine-tuned_model`資料夾
+- 將fine-tuned的hfl_pretraineds_sentBase_document_article放入`\sbert_fine-tuned\fine-tuned_model`資料夾
 - 將pretrained的hfl_SBDA50e_BM25Fv3All放入`\CHEF\Claim_validation\model`資料夾
 
 ## Requirements 
