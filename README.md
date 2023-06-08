@@ -2,10 +2,10 @@
 
 ### 請[點此](https://drive.google.com/drive/folders/1FNjZ5L3uTMsezUJE-jt15rAkCIfv0_40?usp=share_link)下載所需的Model和資料
 
-- 將Wiki Folder放入執行資料夾。
+- 將Wiki Folder放入執行資料夾
 - 將ir.db和ir_title.db放入`Document_retrieval`資料夾
-- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入...
-- 將pretrained的hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入...
+- 將pretrained的hfl_0511SBDA50e0519_epoch16_BM25Fv3All_0607放入執行資料夾
+- 將pretrained的hfl_pretraineds_0511sentBase_document_article_epoch50_0519放入執行資料夾
 
 
 ## Requirements 
