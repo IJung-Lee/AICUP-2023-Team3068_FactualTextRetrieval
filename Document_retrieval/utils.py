@@ -40,7 +40,7 @@ def wiki_num_sentence(folder_path):
     '''句子'''
     wikiALL = dict()
     for data in files:
-        if data == '/.DS_Store':
+        if data == '.DS_Store':
             continue
         df = pd.read_json(path_or_buf=folder_path+'/'+data, lines=True)
         df.set_index('id' , inplace=True)
@@ -67,6 +67,8 @@ def wiki_doc(folder_path):
     '''文章'''
     wikiALL = dict()
     for data in files:
+        if data == '.DS_Store':
+            continue
         df = pd.read_json(path_or_buf=folder_path+'/'+data, lines=True)
         df.set_index('id' , inplace=True)
         df = df.fillna(0)
@@ -95,6 +97,8 @@ def wiki_arctext_doc(folder_path):
     '''斷句文章'''
     wikiALL = dict()
     for data in files:
+        if data == '.DS_Store':
+            continue
         df = pd.read_json(path_or_buf=folder_path+'/'+data, lines=True)
         df.set_index('id' , inplace=True)
         df = df.fillna(0)
@@ -122,6 +126,8 @@ def wiki_numtext_doc(folder_path):
     '''帶num文章'''
     wikiALL = dict()
     for data in files:
+        if data == '.DS_Store':
+            continue
         df = pd.read_json(path_or_buf=folder_path+'/'+data, lines=True)
         df.set_index('id' , inplace=True)
         df = df.fillna(0)
