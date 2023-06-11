@@ -1,4 +1,4 @@
-# Team3068_FactualTextRetrieval
+# AICUP-2023-Team3068_FactualTextRetrieval
 
 ## 模型、資料下載
 
