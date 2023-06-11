@@ -11,7 +11,7 @@
 | `ir.db` | [連結]( https://drive.google.com/file/d/1KamMYUomOvfygmwz4lWHYQU6UXjSeH38/view?usp=share_link) |
 
 
-- 將Wiki Folder放入執行資料夾
+- 將Wiki資料夾與其內容放入執行資料夾
 - 將ir.db和ir_title.db放入`Document_retrieval`資料夾
 - 將fine-tuned的hfl_pretraineds_sentBase_document_article放入`\sbert_fine-tuned\fine-tuned_model`資料夾
 - 將pretrained的hfl_SBDA50e_BM25Fv3All放入`\CHEF\Claim_validation\model`資料夾
@@ -35,10 +35,10 @@ GPU：NVIDIA GeForce RTX 3090 24G
 
 至雲端下載ir.db和ir_title.db並放入`Document_retrieval`中或執行下列程式碼生成ir.db和ir_title.db。
 ```
-python Inverted_Index.py
+python ./Document_retrieval/Inverted_Index.py
 ```
 
-執行`Document_retrieval`資料夾中的`doc_retrieval.ipynb`，產生BM25F計算結果，結果將生成在Document_retrieval的Result中。  
+執行`Document_retrieval`資料夾中的`doc_retrieval.ipynb`，生成預處理資料(Wiki資料夾與data_preprocessing資料夾)和BM25F計算結果，BM25F結果將生成在Document_retrieval的Result中。  
 
 
 ### Sentence Retrieval
@@ -58,5 +58,9 @@ python get_sents.py
 ```
 python train.py
 ```
+
+### Submit Format
+
+執行`Submit_Form.ipynb`產生比賽所需上傳格式。
 
 
